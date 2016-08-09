@@ -1,0 +1,26 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'Rent-A-Bike' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Rent-A-Bike
+  pod 'ARSLineProgress', '~> 1.0'
+  pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+  pod 'Siesta', '>=1.0-beta.6'
+  pod 'JLToast', '~> 1.4'
+  pod 'GoogleMaps'
+  pod 'IQKeyboardManager'
+
+  target 'Rent-A-BikeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Rent-A-BikeUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

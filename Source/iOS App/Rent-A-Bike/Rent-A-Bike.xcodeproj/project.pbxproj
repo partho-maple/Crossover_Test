@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		339E224F49CDD1FB05357D85 /* Pods_Rent_A_Bike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A27DEFA4714E23C066296A /* Pods_Rent_A_Bike.framework */; };
+		7705DB171CF774B800D65B06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705DB161CF774B800D65B06 /* AppDelegate.swift */; };
+		7705DB1C1CF774B800D65B06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7705DB1A1CF774B800D65B06 /* Main.storyboard */; };
+		7705DB1F1CF774B800D65B06 /* Rent_A_Bike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7705DB1D1CF774B800D65B06 /* Rent_A_Bike.xcdatamodeld */; };
+		7705DB211CF774B800D65B06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7705DB201CF774B800D65B06 /* Assets.xcassets */; };
+		7705DB241CF774B800D65B06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7705DB221CF774B800D65B06 /* LaunchScreen.storyboard */; };
+		7705DB2F1CF774B800D65B06 /* Rent_A_BikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705DB2E1CF774B800D65B06 /* Rent_A_BikeTests.swift */; };
+		7705DB3A1CF774B800D65B06 /* Rent_A_BikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705DB391CF774B800D65B06 /* Rent_A_BikeUITests.swift */; };
+		7705DBCC1CF7870600D65B06 /* RABAppearanceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705DBC81CF7870600D65B06 /* RABAppearanceInfo.swift */; };
+		7705DBCD1CF7870600D65B06 /* UIResponder+RABAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705DBC91CF7870600D65B06 /* UIResponder+RABAppearance.swift */; };
+		7705DBCE1CF7870600D65B06 /* UIColor+RABAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705DBCA1CF7870600D65B06 /* UIColor+RABAppearance.swift */; };
+		7705DBCF1CF7870600D65B06 /* UIFont+RABAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705DBCB1CF7870600D65B06 /* UIFont+RABAppearance.swift */; };
+		7705DC391CF7A9B400D65B06 /* JitenshaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705DC381CF7A9B300D65B06 /* JitenshaAPI.swift */; };
+		7711A46E1CF8654700D09BD8 /* JitenshaAPISigninDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711A46D1CF8654700D09BD8 /* JitenshaAPISigninDelegate.swift */; };
+		7711A4711CF871EB00D09BD8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711A4701CF871EB00D09BD8 /* Utils.swift */; };
+		7711A4741CF871F900D09BD8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711A4731CF871F900D09BD8 /* SignInViewController.swift */; };
+		7711A47C1CF8890D00D09BD8 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711A47B1CF8890D00D09BD8 /* Place.swift */; };
+		7711A47E1CF8944600D09BD8 /* JitenshaAPIFetchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711A47D1CF8944600D09BD8 /* JitenshaAPIFetchDelegate.swift */; };
+		7786B2611CF89FE200132866 /* RABMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786B2601CF89FE200132866 /* RABMapViewController.swift */; };
+		7786B2631CF8A0B900132866 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786B2621CF8A0B900132866 /* SignupViewController.swift */; };
+		7786B2651CF8A2BC00132866 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B2641CF8A2BC00132866 /* MapKit.framework */; };
+		7786B2691CF8B59800132866 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786B2681CF8B59800132866 /* Location.swift */; };
+		7786B26B1CF8D9F800132866 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B26A1CF8D9F800132866 /* CoreLocation.framework */; };
+		7786B26D1CF8E33D00132866 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B26C1CF8E33D00132866 /* CoreData.framework */; };
+		7786B26F1CF8E34700132866 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B26E1CF8E34700132866 /* AVFoundation.framework */; };
+		7786B2711CF8E35700132866 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B2701CF8E35700132866 /* CoreText.framework */; };
+		7786B2731CF8E35E00132866 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B2721CF8E35E00132866 /* GLKit.framework */; };
+		7786B2751CF8E36900132866 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B2741CF8E36900132866 /* ImageIO.framework */; };
+		7786B2771CF8E37E00132866 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B2761CF8E37E00132866 /* libc++.tbd */; };
+		7786B2791CF8E39700132866 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B2781CF8E39700132866 /* libz.tbd */; };
+		7786B27B1CF8E3A300132866 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B27A1CF8E3A300132866 /* OpenGLES.framework */; };
+		7786B27D1CF8E3A900132866 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B27C1CF8E3A900132866 /* QuartzCore.framework */; };
+		7786B27F1CF8E3B500132866 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786B27E1CF8E3B500132866 /* SystemConfiguration.framework */; };
+		7786B2831CF9153E00132866 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786B2821CF9153E00132866 /* PaymentViewController.swift */; };
+		7786B2851CF91F3300132866 /* MonthYearPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786B2841CF91F3300132866 /* MonthYearPickerView.swift */; };
+		7786B2871CF92B1A00132866 /* JitenshaAPIPaymentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786B2861CF92B1A00132866 /* JitenshaAPIPaymentDelegate.swift */; };
+		7786B2891CF92B3100132866 /* JitenshaAPISignupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786B2881CF92B3100132866 /* JitenshaAPISignupDelegate.swift */; };
+		77E86BAF1CF953BC00D7D33E /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E86BAE1CF953BC00D7D33E /* AppKeys.swift */; };
+		77E86BB11CF9A0EE00D7D33E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 77E86BB01CF9A0EE00D7D33E /* README.md */; };
+		9077CAB6E5854360639B0CF1 /* Pods_Rent_A_BikeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C363A5F677F9D2D06594BD6 /* Pods_Rent_A_BikeUITests.framework */; };
+		D8A18B580E4AE8BBA9AA605B /* Pods_Rent_A_BikeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCED2274A18DF4F6E30C78D /* Pods_Rent_A_BikeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7705DB2B1CF774B800D65B06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7705DB0B1CF774B800D65B06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7705DB121CF774B800D65B06;
+			remoteInfo = "Rent-A-Bike";
+		};
+		7705DB361CF774B800D65B06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7705DB0B1CF774B800D65B06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7705DB121CF774B800D65B06;
+			remoteInfo = "Rent-A-Bike";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7705DC351CF7A1EF00D65B06 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B5CBAB178EF34EE27A3EDAC /* Pods-Rent-A-Bike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rent-A-Bike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rent-A-Bike/Pods-Rent-A-Bike.debug.xcconfig"; sourceTree = "<group>"; };
+		0CEC6AB79B5660CA11892BA7 /* Pods-Rent-A-BikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rent-A-BikeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rent-A-BikeTests/Pods-Rent-A-BikeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A12C0A6F7289B5A4E83B909 /* Pods-Rent-A-BikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rent-A-BikeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rent-A-BikeTests/Pods-Rent-A-BikeTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C363A5F677F9D2D06594BD6 /* Pods_Rent_A_BikeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rent_A_BikeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC1359C5EDB57828C4D3CC0 /* Pods-Rent-A-BikeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rent-A-BikeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rent-A-BikeUITests/Pods-Rent-A-BikeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		737020004DD5FDE4661DA2A6 /* Pods-Rent-A-Bike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rent-A-Bike.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rent-A-Bike/Pods-Rent-A-Bike.release.xcconfig"; sourceTree = "<group>"; };
+		76A27DEFA4714E23C066296A /* Pods_Rent_A_Bike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rent_A_Bike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7705DB131CF774B800D65B06 /* Rent-A-Bike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent-A-Bike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7705DB161CF774B800D65B06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7705DB1B1CF774B800D65B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7705DB1E1CF774B800D65B06 /* Rent_A_Bike.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rent_A_Bike.xcdatamodel; sourceTree = "<group>"; };
+		7705DB201CF774B800D65B06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7705DB231CF774B800D65B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7705DB251CF774B800D65B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7705DB2A1CF774B800D65B06 /* Rent-A-BikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rent-A-BikeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7705DB2E1CF774B800D65B06 /* Rent_A_BikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rent_A_BikeTests.swift; sourceTree = "<group>"; };
+		7705DB301CF774B800D65B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7705DB351CF774B800D65B06 /* Rent-A-BikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rent-A-BikeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7705DB391CF774B800D65B06 /* Rent_A_BikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rent_A_BikeUITests.swift; sourceTree = "<group>"; };
+		7705DB3B1CF774B800D65B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7705DBC81CF7870600D65B06 /* RABAppearanceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RABAppearanceInfo.swift; sourceTree = "<group>"; };
+		7705DBC91CF7870600D65B06 /* UIResponder+RABAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+RABAppearance.swift"; sourceTree = "<group>"; };
+		7705DBCA1CF7870600D65B06 /* UIColor+RABAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RABAppearance.swift"; sourceTree = "<group>"; };
+		7705DBCB1CF7870600D65B06 /* UIFont+RABAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+RABAppearance.swift"; sourceTree = "<group>"; };
+		7705DC381CF7A9B300D65B06 /* JitenshaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JitenshaAPI.swift; sourceTree = "<group>"; };
+		7711A46D1CF8654700D09BD8 /* JitenshaAPISigninDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JitenshaAPISigninDelegate.swift; sourceTree = "<group>"; };
+		7711A4701CF871EB00D09BD8 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7711A4731CF871F900D09BD8 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		7711A47B1CF8890D00D09BD8 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		7711A47D1CF8944600D09BD8 /* JitenshaAPIFetchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JitenshaAPIFetchDelegate.swift; sourceTree = "<group>"; };
+		7786B2601CF89FE200132866 /* RABMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RABMapViewController.swift; sourceTree = "<group>"; };
+		7786B2621CF8A0B900132866 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		7786B2641CF8A2BC00132866 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7786B2681CF8B59800132866 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		7786B26A1CF8D9F800132866 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7786B26C1CF8E33D00132866 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7786B26E1CF8E34700132866 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7786B2701CF8E35700132866 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		7786B2721CF8E35E00132866 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		7786B2741CF8E36900132866 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		7786B2761CF8E37E00132866 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7786B2781CF8E39700132866 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7786B27A1CF8E3A300132866 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7786B27C1CF8E3A900132866 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7786B27E1CF8E3B500132866 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7786B2821CF9153E00132866 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		7786B2841CF91F3300132866 /* MonthYearPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthYearPickerView.swift; sourceTree = "<group>"; };
+		7786B2861CF92B1A00132866 /* JitenshaAPIPaymentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JitenshaAPIPaymentDelegate.swift; sourceTree = "<group>"; };
+		7786B2881CF92B3100132866 /* JitenshaAPISignupDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JitenshaAPISignupDelegate.swift; sourceTree = "<group>"; };
+		77E86BAE1CF953BC00D7D33E /* AppKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKeys.swift; sourceTree = "<group>"; };
+		77E86BB01CF9A0EE00D7D33E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DBCED2274A18DF4F6E30C78D /* Pods_Rent_A_BikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rent_A_BikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C8DA50D622D6B29BFDE521 /* Pods-Rent-A-BikeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rent-A-BikeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rent-A-BikeUITests/Pods-Rent-A-BikeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7705DB101CF774B800D65B06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7786B27F1CF8E3B500132866 /* SystemConfiguration.framework in Frameworks */,
+				7786B27D1CF8E3A900132866 /* QuartzCore.framework in Frameworks */,
+				7786B27B1CF8E3A300132866 /* OpenGLES.framework in Frameworks */,
+				7786B2791CF8E39700132866 /* libz.tbd in Frameworks */,
+				7786B2771CF8E37E00132866 /* libc++.tbd in Frameworks */,
+				7786B2751CF8E36900132866 /* ImageIO.framework in Frameworks */,
+				7786B2731CF8E35E00132866 /* GLKit.framework in Frameworks */,
+				7786B2711CF8E35700132866 /* CoreText.framework in Frameworks */,
+				7786B26F1CF8E34700132866 /* AVFoundation.framework in Frameworks */,
+				7786B26D1CF8E33D00132866 /* CoreData.framework in Frameworks */,
+				7786B26B1CF8D9F800132866 /* CoreLocation.framework in Frameworks */,
+				7786B2651CF8A2BC00132866 /* MapKit.framework in Frameworks */,
+				339E224F49CDD1FB05357D85 /* Pods_Rent_A_Bike.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7705DB271CF774B800D65B06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A18B580E4AE8BBA9AA605B /* Pods_Rent_A_BikeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7705DB321CF774B800D65B06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9077CAB6E5854360639B0CF1 /* Pods_Rent_A_BikeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B16DCEB1D0F3089335D12CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7786B27E1CF8E3B500132866 /* SystemConfiguration.framework */,
+				7786B27C1CF8E3A900132866 /* QuartzCore.framework */,
+				7786B27A1CF8E3A300132866 /* OpenGLES.framework */,
+				7786B2781CF8E39700132866 /* libz.tbd */,
+				7786B2761CF8E37E00132866 /* libc++.tbd */,
+				7786B2741CF8E36900132866 /* ImageIO.framework */,
+				7786B2721CF8E35E00132866 /* GLKit.framework */,
+				7786B2701CF8E35700132866 /* CoreText.framework */,
+				7786B26E1CF8E34700132866 /* AVFoundation.framework */,
+				7786B26C1CF8E33D00132866 /* CoreData.framework */,
+				7786B26A1CF8D9F800132866 /* CoreLocation.framework */,
+				7786B2641CF8A2BC00132866 /* MapKit.framework */,
+				76A27DEFA4714E23C066296A /* Pods_Rent_A_Bike.framework */,
+				DBCED2274A18DF4F6E30C78D /* Pods_Rent_A_BikeTests.framework */,
+				2C363A5F677F9D2D06594BD6 /* Pods_Rent_A_BikeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6556CC28A19E8A3E72EFEEB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B5CBAB178EF34EE27A3EDAC /* Pods-Rent-A-Bike.debug.xcconfig */,
+				737020004DD5FDE4661DA2A6 /* Pods-Rent-A-Bike.release.xcconfig */,
+				0CEC6AB79B5660CA11892BA7 /* Pods-Rent-A-BikeTests.debug.xcconfig */,
+				1A12C0A6F7289B5A4E83B909 /* Pods-Rent-A-BikeTests.release.xcconfig */,
+				F2C8DA50D622D6B29BFDE521 /* Pods-Rent-A-BikeUITests.debug.xcconfig */,
+				3FC1359C5EDB57828C4D3CC0 /* Pods-Rent-A-BikeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7705DB0A1CF774B800D65B06 = {
+			isa = PBXGroup;
+			children = (
+				77E86BB01CF9A0EE00D7D33E /* README.md */,
+				7705DB151CF774B800D65B06 /* Rent-A-Bike */,
+				7705DB2D1CF774B800D65B06 /* Rent-A-BikeTests */,
+				7705DB381CF774B800D65B06 /* Rent-A-BikeUITests */,
+				7705DB141CF774B800D65B06 /* Products */,
+				6556CC28A19E8A3E72EFEEB6 /* Pods */,
+				0B16DCEB1D0F3089335D12CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7705DB141CF774B800D65B06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7705DB131CF774B800D65B06 /* Rent-A-Bike.app */,
+				7705DB2A1CF774B800D65B06 /* Rent-A-BikeTests.xctest */,
+				7705DB351CF774B800D65B06 /* Rent-A-BikeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7705DB151CF774B800D65B06 /* Rent-A-Bike */ = {
+			isa = PBXGroup;
+			children = (
+				7705DB481CF778DF00D65B06 /* Classes */,
+				7705DB161CF774B800D65B06 /* AppDelegate.swift */,
+				7705DB1A1CF774B800D65B06 /* Main.storyboard */,
+				7705DB201CF774B800D65B06 /* Assets.xcassets */,
+				7705DB221CF774B800D65B06 /* LaunchScreen.storyboard */,
+				7705DB251CF774B800D65B06 /* Info.plist */,
+				7705DB1D1CF774B800D65B06 /* Rent_A_Bike.xcdatamodeld */,
+			);
+			path = "Rent-A-Bike";
+			sourceTree = "<group>";
+		};
+		7705DB2D1CF774B800D65B06 /* Rent-A-BikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7705DB2E1CF774B800D65B06 /* Rent_A_BikeTests.swift */,
+				7705DB301CF774B800D65B06 /* Info.plist */,
+			);
+			path = "Rent-A-BikeTests";
+			sourceTree = "<group>";
+		};
+		7705DB381CF774B800D65B06 /* Rent-A-BikeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7705DB391CF774B800D65B06 /* Rent_A_BikeUITests.swift */,
+				7705DB3B1CF774B800D65B06 /* Info.plist */,
+			);
+			path = "Rent-A-BikeUITests";
+			sourceTree = "<group>";
+		};
+		7705DB481CF778DF00D65B06 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7711A4721CF871F900D09BD8 /* UI */,
+				7711A46F1CF871EB00D09BD8 /* Utils */,
+				7705DBD41CF79FB800D65B06 /* API */,
+				7705DBD61CF79FB800D65B06 /* Model */,
+				7705DBC71CF7870600D65B06 /* AppearanceHelpers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7705DBC71CF7870600D65B06 /* AppearanceHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				7705DBC81CF7870600D65B06 /* RABAppearanceInfo.swift */,
+				7705DBC91CF7870600D65B06 /* UIResponder+RABAppearance.swift */,
+				7705DBCA1CF7870600D65B06 /* UIColor+RABAppearance.swift */,
+				7705DBCB1CF7870600D65B06 /* UIFont+RABAppearance.swift */,
+			);
+			path = AppearanceHelpers;
+			sourceTree = "<group>";
+		};
+		7705DBD41CF79FB800D65B06 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7705DC381CF7A9B300D65B06 /* JitenshaAPI.swift */,
+				7711A46D1CF8654700D09BD8 /* JitenshaAPISigninDelegate.swift */,
+				7786B2881CF92B3100132866 /* JitenshaAPISignupDelegate.swift */,
+				7711A47D1CF8944600D09BD8 /* JitenshaAPIFetchDelegate.swift */,
+				7786B2861CF92B1A00132866 /* JitenshaAPIPaymentDelegate.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7705DBD61CF79FB800D65B06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7711A47B1CF8890D00D09BD8 /* Place.swift */,
+				7786B2681CF8B59800132866 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7711A46F1CF871EB00D09BD8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				77E86BAE1CF953BC00D7D33E /* AppKeys.swift */,
+				7786B2841CF91F3300132866 /* MonthYearPickerView.swift */,
+				7711A4701CF871EB00D09BD8 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7711A4721CF871F900D09BD8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7711A4731CF871F900D09BD8 /* SignInViewController.swift */,
+				7786B2621CF8A0B900132866 /* SignupViewController.swift */,
+				7786B2601CF89FE200132866 /* RABMapViewController.swift */,
+				7786B2821CF9153E00132866 /* PaymentViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7705DB121CF774B800D65B06 /* Rent-A-Bike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7705DB3E1CF774B800D65B06 /* Build configuration list for PBXNativeTarget "Rent-A-Bike" */;
+			buildPhases = (
+				149150D821C97C3DF501A0A5 /* 📦 Check Pods Manifest.lock */,
+				7705DB0F1CF774B800D65B06 /* Sources */,
+				7705DB101CF774B800D65B06 /* Frameworks */,
+				7705DB111CF774B800D65B06 /* Resources */,
+				7705DC351CF7A1EF00D65B06 /* Embed Frameworks */,
+				A2C7025B759A2C36BD75B7F4 /* 📦 Embed Pods Frameworks */,
+				9379CAC2FF7924EBA698786D /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rent-A-Bike";
+			productName = "Rent-A-Bike";
+			productReference = 7705DB131CF774B800D65B06 /* Rent-A-Bike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7705DB291CF774B800D65B06 /* Rent-A-BikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7705DB411CF774B800D65B06 /* Build configuration list for PBXNativeTarget "Rent-A-BikeTests" */;
+			buildPhases = (
+				936CDC8027BCBC4385E1F5E0 /* 📦 Check Pods Manifest.lock */,
+				7705DB261CF774B800D65B06 /* Sources */,
+				7705DB271CF774B800D65B06 /* Frameworks */,
+				7705DB281CF774B800D65B06 /* Resources */,
+				093F2533B2406304A35257F4 /* 📦 Embed Pods Frameworks */,
+				84C329DEB1F01FB131D78802 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7705DB2C1CF774B800D65B06 /* PBXTargetDependency */,
+			);
+			name = "Rent-A-BikeTests";
+			productName = "Rent-A-BikeTests";
+			productReference = 7705DB2A1CF774B800D65B06 /* Rent-A-BikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7705DB341CF774B800D65B06 /* Rent-A-BikeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7705DB441CF774B800D65B06 /* Build configuration list for PBXNativeTarget "Rent-A-BikeUITests" */;
+			buildPhases = (
+				57AFD746BC7621063CC45221 /* 📦 Check Pods Manifest.lock */,
+				7705DB311CF774B800D65B06 /* Sources */,
+				7705DB321CF774B800D65B06 /* Frameworks */,
+				7705DB331CF774B800D65B06 /* Resources */,
+				A12D555FF85BB757D75A4AEA /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7705DB371CF774B800D65B06 /* PBXTargetDependency */,
+			);
+			name = "Rent-A-BikeUITests";
+			productName = "Rent-A-BikeUITests";
+			productReference = 7705DB351CF774B800D65B06 /* Rent-A-BikeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7705DB0B1CF774B800D65B06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Partho Biswas";
+				TargetAttributes = {
+					7705DB121CF774B800D65B06 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					7705DB291CF774B800D65B06 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 7705DB121CF774B800D65B06;
+					};
+					7705DB341CF774B800D65B06 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 7705DB121CF774B800D65B06;
+					};
+				};
+			};
+			buildConfigurationList = 7705DB0E1CF774B800D65B06 /* Build configuration list for PBXProject "Rent-A-Bike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7705DB0A1CF774B800D65B06;
+			productRefGroup = 7705DB141CF774B800D65B06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7705DB121CF774B800D65B06 /* Rent-A-Bike */,
+				7705DB291CF774B800D65B06 /* Rent-A-BikeTests */,
+				7705DB341CF774B800D65B06 /* Rent-A-BikeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7705DB111CF774B800D65B06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7705DB241CF774B800D65B06 /* LaunchScreen.storyboard in Resources */,
+				7705DB211CF774B800D65B06 /* Assets.xcassets in Resources */,
+				7705DB1C1CF774B800D65B06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7705DB281CF774B800D65B06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7705DB331CF774B800D65B06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		093F2533B2406304A35257F4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rent-A-BikeTests/Pods-Rent-A-BikeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		149150D821C97C3DF501A0A5 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		57AFD746BC7621063CC45221 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84C329DEB1F01FB131D78802 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rent-A-BikeTests/Pods-Rent-A-BikeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		936CDC8027BCBC4385E1F5E0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9379CAC2FF7924EBA698786D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rent-A-Bike/Pods-Rent-A-Bike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A12D555FF85BB757D75A4AEA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rent-A-BikeUITests/Pods-Rent-A-BikeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C7025B759A2C36BD75B7F4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rent-A-Bike/Pods-Rent-A-Bike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7705DB0F1CF774B800D65B06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7786B2851CF91F3300132866 /* MonthYearPickerView.swift in Sources */,
+				7786B2631CF8A0B900132866 /* SignupViewController.swift in Sources */,
+				7786B2871CF92B1A00132866 /* JitenshaAPIPaymentDelegate.swift in Sources */,
+				77E86BB11CF9A0EE00D7D33E /* README.md in Sources */,
+				7705DBCE1CF7870600D65B06 /* UIColor+RABAppearance.swift in Sources */,
+				7705DBCC1CF7870600D65B06 /* RABAppearanceInfo.swift in Sources */,
+				7705DB1F1CF774B800D65B06 /* Rent_A_Bike.xcdatamodeld in Sources */,
+				7705DB171CF774B800D65B06 /* AppDelegate.swift in Sources */,
+				7786B2891CF92B3100132866 /* JitenshaAPISignupDelegate.swift in Sources */,
+				7711A46E1CF8654700D09BD8 /* JitenshaAPISigninDelegate.swift in Sources */,
+				7786B2611CF89FE200132866 /* RABMapViewController.swift in Sources */,
+				7786B2831CF9153E00132866 /* PaymentViewController.swift in Sources */,
+				7711A4711CF871EB00D09BD8 /* Utils.swift in Sources */,
+				7705DBCF1CF7870600D65B06 /* UIFont+RABAppearance.swift in Sources */,
+				77E86BAF1CF953BC00D7D33E /* AppKeys.swift in Sources */,
+				7711A47C1CF8890D00D09BD8 /* Place.swift in Sources */,
+				7711A4741CF871F900D09BD8 /* SignInViewController.swift in Sources */,
+				7786B2691CF8B59800132866 /* Location.swift in Sources */,
+				7705DC391CF7A9B400D65B06 /* JitenshaAPI.swift in Sources */,
+				7705DBCD1CF7870600D65B06 /* UIResponder+RABAppearance.swift in Sources */,
+				7711A47E1CF8944600D09BD8 /* JitenshaAPIFetchDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7705DB261CF774B800D65B06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7705DB2F1CF774B800D65B06 /* Rent_A_BikeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7705DB311CF774B800D65B06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7705DB3A1CF774B800D65B06 /* Rent_A_BikeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7705DB2C1CF774B800D65B06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7705DB121CF774B800D65B06 /* Rent-A-Bike */;
+			targetProxy = 7705DB2B1CF774B800D65B06 /* PBXContainerItemProxy */;
+		};
+		7705DB371CF774B800D65B06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7705DB121CF774B800D65B06 /* Rent-A-Bike */;
+			targetProxy = 7705DB361CF774B800D65B06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7705DB1A1CF774B800D65B06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7705DB1B1CF774B800D65B06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7705DB221CF774B800D65B06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7705DB231CF774B800D65B06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7705DB3C1CF774B800D65B06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7705DB3D1CF774B800D65B06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7705DB3F1CF774B800D65B06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5CBAB178EF34EE27A3EDAC /* Pods-Rent-A-Bike.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rent-A-Bike/Classes/ThirdParty/Siesta",
+					"$(PROJECT_DIR)/Rent-A-Bike/Classes/ThirdParty",
+					"$(PROJECT_DIR)/Rent-A-Bike/Classes/ThirdParty/SwiftyJSON",
+				);
+				INFOPLIST_FILE = "Rent-A-Bike/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.partho.Rent-A-Bike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7705DB401CF774B800D65B06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 737020004DD5FDE4661DA2A6 /* Pods-Rent-A-Bike.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rent-A-Bike/Classes/ThirdParty/Siesta",
+					"$(PROJECT_DIR)/Rent-A-Bike/Classes/ThirdParty",
+					"$(PROJECT_DIR)/Rent-A-Bike/Classes/ThirdParty/SwiftyJSON",
+				);
+				INFOPLIST_FILE = "Rent-A-Bike/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.partho.Rent-A-Bike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7705DB421CF774B800D65B06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CEC6AB79B5660CA11892BA7 /* Pods-Rent-A-BikeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Rent-A-BikeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.partho.Rent-A-BikeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rent-A-Bike.app/Rent-A-Bike";
+			};
+			name = Debug;
+		};
+		7705DB431CF774B800D65B06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A12C0A6F7289B5A4E83B909 /* Pods-Rent-A-BikeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Rent-A-BikeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.partho.Rent-A-BikeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rent-A-Bike.app/Rent-A-Bike";
+			};
+			name = Release;
+		};
+		7705DB451CF774B800D65B06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C8DA50D622D6B29BFDE521 /* Pods-Rent-A-BikeUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "Rent-A-BikeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.partho.Rent-A-BikeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Rent-A-Bike";
+			};
+			name = Debug;
+		};
+		7705DB461CF774B800D65B06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC1359C5EDB57828C4D3CC0 /* Pods-Rent-A-BikeUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "Rent-A-BikeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.partho.Rent-A-BikeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Rent-A-Bike";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7705DB0E1CF774B800D65B06 /* Build configuration list for PBXProject "Rent-A-Bike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7705DB3C1CF774B800D65B06 /* Debug */,
+				7705DB3D1CF774B800D65B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7705DB3E1CF774B800D65B06 /* Build configuration list for PBXNativeTarget "Rent-A-Bike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7705DB3F1CF774B800D65B06 /* Debug */,
+				7705DB401CF774B800D65B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7705DB411CF774B800D65B06 /* Build configuration list for PBXNativeTarget "Rent-A-BikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7705DB421CF774B800D65B06 /* Debug */,
+				7705DB431CF774B800D65B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7705DB441CF774B800D65B06 /* Build configuration list for PBXNativeTarget "Rent-A-BikeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7705DB451CF774B800D65B06 /* Debug */,
+				7705DB461CF774B800D65B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7705DB1D1CF774B800D65B06 /* Rent_A_Bike.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7705DB1E1CF774B800D65B06 /* Rent_A_Bike.xcdatamodel */,
+			);
+			currentVersion = 7705DB1E1CF774B800D65B06 /* Rent_A_Bike.xcdatamodel */;
+			path = Rent_A_Bike.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7705DB0B1CF774B800D65B06 /* Project object */;
+}

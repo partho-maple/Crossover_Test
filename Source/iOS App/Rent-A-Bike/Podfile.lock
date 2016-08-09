@@ -1,0 +1,38 @@
+PODS:
+  - ARSLineProgress (1.2.0)
+  - GoogleMaps (1.13.2)
+  - IQKeyboardManager (4.0.3)
+  - JLToast (1.4.1)
+  - Siesta (1.0-beta.6):
+    - Siesta/Core (= 1.0-beta.6)
+  - Siesta/Core (1.0-beta.6)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - ARSLineProgress (~> 1.0)
+  - GoogleMaps
+  - IQKeyboardManager
+  - JLToast (~> 1.4)
+  - Siesta (>= 1.0-beta.6)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  ARSLineProgress: c0e1947babec0719fbed2fced28e2bc5438cfc51
+  GoogleMaps: b20a103ff307f58392e603cf142e59d7e30374c1
+  IQKeyboardManager: be9695ffc5a52077deb4847608f338771022d6d1
+  JLToast: f2ccfdb8726e562e6c0154fa3658cd432021b1cc
+  Siesta: 353fba713b4ce9112c26f6b5038ccebeb897f60b
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 6cd5cd5f356f272a264e50bf6a38fe3ee8cf6f31
+
+COCOAPODS: 1.0.0
