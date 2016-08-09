@@ -1,6 +1,6 @@
 ## Description
 
-Rent-A-Bike is a crossover test project.
+Rent-A-Bike was a crossover test project as final steps for Software Architect (iOS/Swift) - $60k position.
 
 ## Features
 
@@ -26,6 +26,11 @@ Rent-A-Bike is a crossover test project.
 
 ## Feedback
 
-- There is a major mistake on the API documentation. According to the documentation, the register api call is a GET method.  But in real it's not. The register API is a POST methos. Please fix the mistake. This mistake took my 2-3 hours.
+- There is a major mistake on the API documentation. According to the documentation, the register api call is a GET method.  But in real it's not. The register API is a POST methos.
+- 
+
+## Note
+
+Please don't copy or use this project without my permission. 
 
 ---
