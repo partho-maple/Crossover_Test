@@ -27,7 +27,6 @@ Rent-A-Bike was a crossover test project as final steps for Software Architect (
 ## Feedback
 
 - There is a major mistake on the API documentation. According to the documentation, the register api call is a GET method.  But in real it's not. The register API is a POST methos.
-- 
 
 ## Note
 
